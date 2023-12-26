@@ -19,7 +19,10 @@
 
 
 
-https://github.com/YShigeoka/minigame/assets/144694165/79707754-fad4-4482-a3d1-7790e838aaa6
+
+https://github.com/YShigeoka/MiniGame/assets/144694165/f7525147-b73f-44ab-99a2-87eb055b6b6b
+
+
 
 
 
