@@ -62,6 +62,3 @@ https://github.com/YShigeoka/minigame/assets/144694165/79707754-fad4-4482-a3d1-7
  
 * 作成者　Y.Shigeoka
 * X(旧Twitter)　https://twitter.com/ura220002
-=======
-# MiniGame
->>>>>>> 32e8566bf2dc136f65e2058887ebd99fa43392f7
