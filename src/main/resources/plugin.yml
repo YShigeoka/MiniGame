@@ -4,3 +4,4 @@ main: plugin.mininggame2.Main
 api-version: '1.20'
 commands:
   miningGame:
+  gameCancel:

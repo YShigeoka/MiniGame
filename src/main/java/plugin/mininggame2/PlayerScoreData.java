@@ -13,15 +13,15 @@ import plugin.mininggame2.mapper.data.PlayerScore;
  * DB接続やそれに付随する登録や更新処理を行うクラス。
  */
 public class PlayerScoreData {
-  private SqlSessionFactory sqlSessionFactory;
-  private PlayerScoreMapper mapper;
+
+  private final PlayerScoreMapper mapper;
 
 
 
   public PlayerScoreData(){
     try {
       InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
-      this.sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+      SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
       SqlSession session = sqlSessionFactory.openSession(true);
       this.mapper = session.getMapper(PlayerScoreMapper.class);
     } catch (Exception e) {

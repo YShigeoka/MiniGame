@@ -42,7 +42,7 @@ public class MiningGameCommand extends BaseCommand implements Listener {
   private final Main main;
   private final PlayerScoreData playerScoreData = new PlayerScoreData();
 
-  private final List<ExecutingPlayer> executingPlayerList = new ArrayList<>();
+  List<ExecutingPlayer> executingPlayerList = new ArrayList<>();
   private final List<BlockState> originBlockState = new ArrayList<>();
   private final List<Block> generateBlocks = new ArrayList<>();
   private final List<ItemStack[]> playerInventories = new ArrayList<>();
@@ -248,7 +248,7 @@ public class MiningGameCommand extends BaseCommand implements Listener {
    * @param nowExecutingPlayer  プレイヤースコア情報
    * @param difficulty          難易度
    */
-  private void gamePlay(Player player, ExecutingPlayer nowExecutingPlayer, String difficulty){
+  public void gamePlay(Player player, ExecutingPlayer nowExecutingPlayer, String difficulty){
     Bukkit.getScheduler().runTaskTimer(main, Runnable -> {
       if (nowExecutingPlayer.getGameTime() <= 0) {
         Runnable.cancel();
@@ -277,6 +277,7 @@ public class MiningGameCommand extends BaseCommand implements Listener {
       }
       nowExecutingPlayer.setGameTime(nowExecutingPlayer.getGameTime() - 20);
     }, 0, 30 * 20);
+
   }
 
 
